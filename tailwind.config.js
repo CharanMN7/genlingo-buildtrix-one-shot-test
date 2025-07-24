@@ -1,0 +1,95 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'genlingo-blue': '#5F7EFF',
+        'genlingo-red': '#FF6B6B',
+        'genlingo-accent': '#B16BFF',
+        'light-blue': '#A0B0FF',
+        'light-red': '#FFBABA',
+        'soft-yellow': '#FFF3CC',
+        'success': '#6BBF72',
+        'warning': '#F2C94C',
+        'error': '#EB5757',
+        'info': '#5F7EFF',
+        // Neutral scale
+        'neutral-0': '#FFFFFF',
+        'neutral-1': '#F8F8F8',
+        'neutral-2': '#E0E0E0',
+        'neutral-3': '#C2C2C2',
+        'neutral-4': '#9E9E9E',
+        'neutral-5': '#757575',
+        'neutral-6': '#424242',
+        'neutral-7': '#212121',
+        'neutral-8': '#121212',
+        'neutral-9': '#000000',
+      },
+      fontFamily: {
+        heading: ['Nunito', 'sans-serif'],
+        body: ['Inter', 'sans-serif'],
+      },
+      borderRadius: {
+        md: '8px',
+        lg: '12px',
+        xl: '16px',
+        full: '9999px',
+        'genlingo': '10px',
+      },
+      spacing: {
+        1: '4px',
+        2: '8px',
+        3: '12px',
+        4: '16px',
+        5: '20px',
+        6: '24px',
+        8: '32px',
+        10: '40px',
+        12: '48px',
+        16: '64px',
+        20: '80px',
+        24: '96px',
+      },
+      boxShadow: {
+        card: '0px 4px 12px rgba(0, 0, 0, 0.08)',
+        button: '0px 2px 8px rgba(95, 126, 255, 0.15)',
+      },
+      transitionTimingFunction: {
+        bounce: 'cubic-bezier(0.68, -0.55, 0.265, 1.55)',
+      },
+      maxWidth: {
+        'content': '1280px',
+      },
+    },
+    fontSize: {
+      // Mobile
+      'display-m': ['32px', { lineHeight: '1.2', fontWeight: '700' }],
+      'h2-m': ['24px', { lineHeight: '1.2', fontWeight: '600' }],
+      'h3-m': ['20px', { lineHeight: '1.2', fontWeight: '500' }],
+      'body-lg-m': ['18px', { lineHeight: '1.4', fontWeight: '400' }],
+      'body-m': ['16px', { lineHeight: '1.4', fontWeight: '400' }],
+      'caption-m': ['14px', { lineHeight: '1.4', fontWeight: '400' }],
+      'small-m': ['12px', { lineHeight: '1.4', fontWeight: '400' }],
+      // Desktop
+      'display-d': ['48px', { lineHeight: '1.2', fontWeight: '700' }],
+      'h2-d': ['36px', { lineHeight: '1.2', fontWeight: '600' }],
+      'h3-d': ['28px', { lineHeight: '1.2', fontWeight: '500' }],
+      'body-lg-d': ['20px', { lineHeight: '1.4', fontWeight: '400' }],
+      'body-d': ['18px', { lineHeight: '1.4', fontWeight: '400' }],
+      'caption-d': ['16px', { lineHeight: '1.4', fontWeight: '400' }],
+      'small-d': ['14px', { lineHeight: '1.4', fontWeight: '400' }],
+    },
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+    },
+  },
+  plugins: [],
+}; 
